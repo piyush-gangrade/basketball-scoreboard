@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #1d3557;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+}
+
+
+header, .container{
+    width: 75%;
+    background-color: #457b9d;
+    text-align: center;
+    border-radius: 0.3em;
+}
+
+header{
+    padding: 0.5em;
+    margin:  2em 0px;
+    color: #222222;
+    border-radius: 0.15em;
+}
+
+header h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em;
+    gap: 1em 2em;
+    grid-template-areas: 
+    "heading1 heading2"
+    "score1 score2"
+    "score-btn1 score-btn2"
+    "button button";
+}
+
+h3:first-child{grid-area: heading1;}
+.score:nth-child(2){grid-area: score1;}
+div:nth-child(3){grid-area: score-btn1;}
+h3:nth-child(4){grid-area: heading2;}
+.score:nth-child(5){grid-area: score2;}
+div:last-child{grid-area: score-btn2;}
+
+.team-name, 
+.score, 
+.score-btn{
+    margin: auto;
+}
+
+.team-name {
+    color: #f1faee;
+    font-size: 1.5rem;
+}
+
+.score,
+.score-btn{   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.score{
+    text-align: center;
+    display: block;
+    justify-content: center;
+    background-color: #080001;
+    width: 100%;
+    height: 100%;
+    border-radius:0.1em;
+    color: #e63946;
+    font-size: 4rem;
+    font-family: "Graduate", serif;
+    padding: 0.15em;
+}
+
+
+.btn{
+    padding: 0.3em;
+    border-radius: 6px;
+    font-family: "Roboto", sans-serif;
+}
+.btn:focus, .btn-main{
+    outline: none;
+}
+
+.btn-off{
+    background-color: #9CA3AF;
+    color: #D1D5DB;
+    border: none;
+    cursor: not-allowed;
+}
+
+.btn-on{
+    background-color: #457b9d;
+    border: 1px dotted #f1faee;
+    color: #f1faee;
+    cursor: pointer;
+}
+.btn-on:hover{
+    background-color: #1d3557;
+    border: 1px solid #FFFFFF;
+
+}
+
+
+.btn-main{
+    grid-area: button;
+    background-color: #34D399;
+    border-radius: 5px;
+    color: #1d3557;
+    font-weight: bold;
+    font-size: 1.25rem;
+    border: none;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    padding: 0.3em ;
+}
+.btn-main:hover{
+    outline: none;
+    background-color: #6EE7B7;
+}
+
+
+@media screen and (min-width: 467px) {
+    
+    header h1{
+        font-size:2.5rem;
+    }
+    .container{
+        padding: 1em 2.5em;
+        gap: 1em 2.5em;
+    }
+    .team-name{
+        font-size: 2rem;
+    }
+    .score{
+        font-size: 5rem;
+    }
+    .btn{
+        font-size: 1rem;
+    }
+    .btn-main{
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and  (min-width: 476px) and (max-width: 768px){
+    header, .container{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header, .container{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    header, .container{
+        width: 35%;
+    }
+
+    header h1{
+        font-size: 3rem;
+    }
+
+    .container{
+        padding: 1em 3em;
+    }
+
+    .team-name{
+        font-size: 2.5rem;
+    }
+
+    .score{
+        font-size: 7rem;
+        padding: 0.3em 0;
+    }
+
+    .btn{
+        font-size: 1.25rem;
+    }
+
+    .btn-main{
+        width: 30%;
+        justify-self: center;
+    }
+}
