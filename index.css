@@ -90,9 +90,10 @@ div:last-child{grid-area: score-btn2;}
 
 
 .btn{
-    padding: 0.3em;
+    padding: 0.4em;
     border-radius: 6px;
     font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
 }
 .btn:focus, .btn-main{
     outline: none;
@@ -119,6 +120,7 @@ div:last-child{grid-area: score-btn2;}
 
 
 .btn-main{
+    margin-top: 1em;
     grid-area: button;
     background-color: #34D399;
     border-radius: 5px;
