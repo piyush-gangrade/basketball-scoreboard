@@ -1,4 +1,4 @@
-# Simple Scoreboard
+# Basketball Scoreboard
 
 A simple scoreboard website built with HTML, CSS, and JavaScript. This application allows users to add scores of 1, 2, or 3, as well as start and restart the scoreboard.
 
@@ -16,7 +16,7 @@ A simple scoreboard website built with HTML, CSS, and JavaScript. This applicati
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/simple-scoreboard.git
+    git clone https://github.com/piyush-gangrade/basketball-scoreboard.git
     cd simple-scoreboard
     ```
 
